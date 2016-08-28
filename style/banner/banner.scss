@@ -1,0 +1,17 @@
+@import "../variables";
+
+.banner {
+  width: 65%;
+  display:inline-block;
+}
+
+.banner__title {
+  font-size: 64px;
+  //color: #006994;
+  color: $main-color;
+}
+
+.banner__description {
+  font-size: 20px;
+  color: #3B3C36;
+}

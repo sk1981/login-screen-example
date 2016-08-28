@@ -1,0 +1,34 @@
+@import "../variables";
+
+$login-input-height: 50px;
+$login-text-length: 80px;
+
+.login__label {
+  width: 100%;
+  display: inline-block;
+  margin-top: 20px;
+  height: $login-input-height;
+  line-height: $login-input-height;
+}
+
+.login__input {
+  width: calc(100% - #{$login-text-length});
+  float:right;
+  height: $login-input-height;
+}
+
+.login__submit {
+  height: 50px;
+  padding: 5px 15px;
+  margin: 20px 0 0 $login-text-length;
+  border:none;
+  color: #fafafa;
+  background-color: $main-color;
+  background-image: linear-gradient(to top, $success-button-color-hi, $success-button-color-lo);
+
+  &:hover {
+    background-image: linear-gradient(to bottom, $success-button-color-hi, $success-button-color-lo);
+  }
+  cursor: pointer;
+
+}
