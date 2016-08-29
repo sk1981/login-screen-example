@@ -36,7 +36,7 @@ export default function reducer(state = INITIAL_STATE, action) {
  * @param password
  * @returns {*}
  */
-function setLoggedInUser(userState, username, password) {
+function setLoggedInUser(username, password) {
   let error;
   if(username === undefined || password === undefined) {
     error = "Please enter valid username and password";
@@ -56,7 +56,7 @@ function setLoggedInUser(userState, username, password) {
   }
 }
 
-function removeLoggedInUser(userState) {
+function removeLoggedInUser() {
   // remove all attributes in case of logged out user
   return {};
 }

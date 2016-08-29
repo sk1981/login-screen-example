@@ -8,7 +8,7 @@ import "../../style/banner/banner.scss";
  * @returns {XML}
  * @constructor
  */
-const Banner = (props) => {
+const Banner = () => {
   return (
     <div className="banner">
       <h2 className="banner__title">

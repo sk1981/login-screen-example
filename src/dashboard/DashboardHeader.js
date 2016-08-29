@@ -23,7 +23,7 @@ function generateNav() {
  * @returns {XML}
  * @constructor
  */
-const DashboardHeader = (props) => {
+const DashboardHeader = () => {
   return (
     <div className="dashboard-header">
       <h2>My Firm</h2>

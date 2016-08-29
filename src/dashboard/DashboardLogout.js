@@ -14,7 +14,7 @@ let DashboardLogout = React.createClass({
 
 var mapDispatchToProps = function (dispatch) {
   return {
-    logout: _ => dispatch(createLogoutAction())
+    logout: () => dispatch(createLogoutAction())
   }
 };
 

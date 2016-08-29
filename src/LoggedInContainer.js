@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
 };
 
 const LoggedInContainer = connect(
-  mapStateToProps,
+  mapStateToProps
 )(Container);
 
 export default LoggedInContainer

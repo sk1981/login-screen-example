@@ -4,7 +4,6 @@ import {Provider} from 'react-redux'
 import {createStore} from 'redux'
 import appReducer from './redux/reducer'
 import LoggedInContainer from "./LoggedInContainer";
-import LoginPage from "./login/LoginPage";
 
 import "../style/main.scss";
 
