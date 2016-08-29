@@ -1,0 +1,16 @@
+.dashboard-nav {
+  display: inline-block;
+}
+.dashboard-nav__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dashboard-nav__item {
+  padding: 10px 20px;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding-left: 0;
+  }
+}

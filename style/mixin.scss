@@ -1,0 +1,10 @@
+@mixin update-link-color($linkSelector, $colorValue) {
+  #{$linkSelector} {
+    &,
+    &:hover,
+    &:active,
+    &:visited {
+      color: $colorValue;
+    }
+  }
+}

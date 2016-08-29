@@ -1,0 +1,12 @@
+@import "../variables";
+@import "../mixin";
+@import "./nav";
+
+.dashboard-header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: $header-bg-color;
+  color: $header-color;
+}
+
+@include update-link-color(".dashboard-header a", $header-color);
