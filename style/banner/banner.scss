@@ -1,13 +1,17 @@
 @import "../variables";
 
 .banner {
-  width: 65%;
+  max-width: 650px;
   display:inline-block;
 }
 
 .banner__title {
   font-size: 64px;
   color: $main-color;
+  margin-top: 0;
+  @media screen and (max-width: 500px) {
+    font-size: 40px;
+  }
 }
 
 .banner__description {

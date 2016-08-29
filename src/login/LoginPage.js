@@ -1,6 +1,7 @@
 import React from "react";
 import LoginForm from "./LoginForm";
 import Banner from "../banner/Banner";
+import '../../style/front-page.scss'
 
 /**
  * Element to display app banner.
@@ -11,7 +12,7 @@ import Banner from "../banner/Banner";
  */
 const LoginPage = (props) => {
   return (
-    <div>
+    <div className="front-page">
       <Banner/>
       <LoginForm {...props}>
       </LoginForm>
