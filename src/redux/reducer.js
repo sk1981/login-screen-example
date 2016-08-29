@@ -16,7 +16,6 @@ export default function reducer(state = INITIAL_STATE, action) {
       newState = {
         loggedInUser : setLoggedInUser(state.loggedInUser, action.username, action.password)
       };
-      console.log("new state  is", state);
       return newState;
     case 'LOGOUT':
       newState = {

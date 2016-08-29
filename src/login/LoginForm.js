@@ -10,12 +10,10 @@ import "../../style/login/login-page.scss";
 let LoginForm = React.createClass({
 
   submitLogin() {
-    console.log("submititng", this.loginNode.value, this.passwordNode.value);
     this.props.login(this.loginNode.value, this.passwordNode.value)
   },
 
   getErrorMessage(props) {
-    console.log("error ---", props);
     if(props.error !== undefined) {
       return (
         <div className="login__error">
@@ -55,4 +53,3 @@ var mapDispatchToProps = function (dispatch) {
 LoginForm = connect(undefined, mapDispatchToProps)(LoginForm);
 
 export default LoginForm;
-;

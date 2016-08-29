@@ -1,3 +1,4 @@
+@import "../variables";
 .dashboard-nav {
   display: inline-block;
 }
@@ -13,4 +14,11 @@
     width: 100%;
     padding-left: 0;
   }
+}
+
+.dashboard-nav__button {
+  background: none;
+  border: none;
+  color: $header-color;
+  cursor: pointer;
 }

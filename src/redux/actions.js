@@ -5,3 +5,9 @@ export function createLoginAction(username, password) {
     password
   }
 }
+
+export function createLogoutAction() {
+  return {
+    type: "LOGOUT"
+  }
+}

@@ -2,11 +2,11 @@ import React from "react";
 import AdminDashboard from "./AdminDashboard";
 import UserDashboard from "./UserDashboard";
 import DashboardHeader from "./DashboardHeader";
-import "../../style/dashboard/header.scss";
+import "../../style/dashboard/dashboard.scss";
 
 
 /**
- * Element to display app banner.
+ * Element to display app Dashboard.
  *
  * @param props
  * @returns {XML}
