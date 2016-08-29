@@ -1,15 +1,19 @@
 import React from "react";
 import {render} from 'react-dom';
+import {Provider} from 'react-redux'
+import {createStore} from 'redux'
+import appReducer from './redux/reducer'
+import LoggedInContainer from "./LoggedInContainer";
+import LoginPage from "./login/LoginPage";
+
 import "../style/main.scss";
-import LoginForm from "./login/LoginForm";
-import Banner from "./banner/Banner";
+
+let store = createStore(appReducer);
 
 const App = (
-  <main className="content">
-    <Banner></Banner>
-    <LoginForm>
-    </LoginForm>
-  </main>
+  <Provider store={store}>
+    <LoggedInContainer/>
+  </Provider>
 );
 
 render(App, document.querySelector('#target'));
