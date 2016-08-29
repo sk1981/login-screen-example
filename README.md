@@ -19,3 +19,5 @@ A Simple Login screen flow using react and redux. While the use of react and red
 * Testcases - unit and integration
 * Accessibility related changes
 * Use react router to represent different screens
+* Use of proper immutable data structures
+* Using local storage to store login data
