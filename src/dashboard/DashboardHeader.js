@@ -1,8 +1,13 @@
 import React from "react";
 import DashboardLogout from "./DashboardLogout";
 
-function generateNav() {
-  const navLinks = ["Home", "Contact Us", "Support"].map(linkText => {
+function generateNav(role) {
+  const links = ['Home', 'Contact Us', 'Support'];
+  if(role === 'admin') {
+    links.push("Admin");
+  }
+
+  const navLinks = links.map(linkText => {
     return <li className="dashboard-nav__item" key={linkText}><a className="dashboard-nav__link" href="#">{linkText}</a></li>
   });
 
@@ -23,11 +28,11 @@ function generateNav() {
  * @returns {XML}
  * @constructor
  */
-const DashboardHeader = () => {
+const DashboardHeader = (props) => {
   return (
     <div className="dashboard-header">
       <h2>My Firm</h2>
-      {generateNav()}
+      {generateNav(props.role)}
     </div>
   )
 };

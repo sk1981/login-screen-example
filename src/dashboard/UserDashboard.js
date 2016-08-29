@@ -10,7 +10,8 @@ import React from "react";
 const UserDashboard = (props) => {
   return (
     <section className="dashboard dashboard--user">
-      {`Welcome user ${props.loggedInUser}`}
+      <p>{`Welcome '${props.loggedInUser}' to User Screen.`}</p>
+      <p>Here you can use the app as you like</p>
     </section>
   )
 };

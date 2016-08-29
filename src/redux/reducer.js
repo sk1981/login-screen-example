@@ -14,12 +14,12 @@ export default function reducer(state = INITIAL_STATE, action) {
   switch (action.type) {
     case 'LOGIN':
       newState = {
-        loggedInUser : setLoggedInUser(state.loggedInUser, action.username, action.password)
+        loggedInUser : setLoggedInUser(action.username, action.password)
       };
       return newState;
     case 'LOGOUT':
       newState = {
-        loggedInUser : removeLoggedInUser(state)
+        loggedInUser : removeLoggedInUser()
       };
       return newState;
   }
@@ -31,7 +31,6 @@ export default function reducer(state = INITIAL_STATE, action) {
  *
  * This ideally be in middleware
  *
- * @param userState
  * @param username
  * @param password
  * @returns {*}

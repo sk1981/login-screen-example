@@ -15,7 +15,7 @@ import "../../style/dashboard/dashboard.scss";
 const Dashboard = (props) => {
   return (
     <div className="dashboard-container">
-      <DashboardHeader/>
+      <DashboardHeader role={props.role}/>
       {(props.role === 'admin') ? <AdminDashboard {...props}/> : <UserDashboard {...props}/>}
     </div>
   )
