@@ -14,10 +14,13 @@ A Simple Login screen flow using react and redux. While the use of react and red
   * npm run build - to build the project
   * npm run watch - to deploy the project and access it via http://localhost:8080
 
+## TODO
+* Use react router to represent different screens
+* Using local storage to store login data
+* Make login async for demo purpose
+
 ## Improvement Scope
 * Add Stylelint
 * Testcases - unit and integration
 * Accessibility related changes
-* Use react router to represent different screens
 * Use of proper immutable data structures
-* Using local storage to store login data
